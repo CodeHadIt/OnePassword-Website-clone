@@ -1,0 +1,1049 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --intoYellow: #FFD480;
+    --intoGreen: #50B347;
+    --heroBlue: #0572EC;
+    --hero-hover: #01244D;
+    --secondSectionBlue: #16436C;
+    --thirdSectionBlue: #0A2D4D;
+    --fourthSectionBg: #E8F3FF;
+    --fourthSectionCard: #034EA6;
+    --footerBg: #08243E;
+    --btnOrange: #FFAA05;
+    --btnYellow: #FFAA05;
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+    line-height: 1;
+    overflow-x: hidden;
+    color: white
+
+}
+
+/*BASE STYLES*/
+
+h1, h3 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.56em;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 17.6px;
+}
+
+p {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.buttons {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    font-weight: 800;
+    color: var(--heroBlue);
+    background: var(--white);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    transition: linear 0.3s;
+}
+
+/*MOBILE*/
+
+/*Intro*/
+
+.intro-message {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 2rem 0.6rem;
+    padding-left: 1.8rem;
+    background: var(--heroBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#mobile-menu {
+    cursor: pointer;
+}
+
+.links-container, #sign-in-link, .logo, .mobile-only{
+    display: none;
+} 
+
+.links-container.toggled {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: var(--white);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.links-container.toggled * {
+    margin-bottom: 2rem;
+    color: var(--heroBlue);
+}
+
+.mobile-only.displayed {
+    display: block;
+}
+.logo {
+    width: 4rem;
+}
+
+#nav-btn:hover {
+    background: var(--intoGreen);
+    color: var(--white);
+}
+
+/*Hero section*/
+
+
+#hero-section {
+    background: var(--heroBlue);
+    overflow: hidden;
+    padding-top: 10rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.5rem 1rem;
+}
+
+.hero-container div {
+    text-align: center;
+    color: white;
+}
+
+.hero-container div h1 {
+    font-size: 3.5rem;
+    max-width: 50rem;
+    text-align: center;
+}
+
+.hero-container div p {
+    font-size: 1.7rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.hero-container div .buttons, .third-section .container .buttons {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    max-width: 20rem;
+    padding: 1.5rem;
+}
+
+#hero-btn1 {
+    background: var(--secondSectionBlue);
+    color: white;
+}
+
+#hero-btn2 {
+    color: var(--heroBlue);
+}
+
+#hero-btn1:hover {
+    background: var(--hero-hover);
+}
+
+#hero-btn2:hover {
+    background: var(--hero-hover);
+    color: var(--white);
+}
+
+#mobile-img {
+    position: relative;
+    top: 52px;
+}
+
+/*Second Section*/
+
+#second-section {
+    background: var(--secondSectionBlue);
+    padding: 4rem 2rem;
+}
+
+#second-section h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: var(--white);
+}
+
+.cards {
+    background: var(--white);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: 1.3rem;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+.cards > * {
+    margin-bottom: 2rem;
+}
+
+.dev-tools-img, .soa-img {
+    width: 100%;
+}
+
+
+
+.card-txt h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.card-txt p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cards a {
+    display: inline-block;
+    text-decoration: underline;
+    text-align: left;
+    color: var(--heroBlue);
+    font-weight: 700;
+}
+
+.cards a:hover {
+    color: var(--hero-hover);
+    text-decoration: none;
+}
+
+/*Third Section*/
+
+.third-section {
+    background: var(--thirdSectionBlue);
+    padding: 10rem;
+    text-align: center;
+}
+
+.third-section .container > * {
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.third-section h2 {
+    font-size: 2.5rem;
+    
+}
+
+.third-section p {
+    font-size: 1.5rem;
+}
+
+.third-section .container #logos-mobile {
+    margin-bottom: 3rem;
+}
+
+.btn-style-1 {
+    background: var(--heroBlue);
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+#logo-btn-2 {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-style-1:hover {
+    background: var(--fourthSectionCard);
+    
+}
+
+#logo-btn-2:hover {
+    background: var(--white);
+    color: var(--thirdSectionBlue);
+
+}
+
+/*Fourth Section*/
+
+.fourth-section {
+    padding: 5rem 0;
+    background: var(--fourthSectionBg);
+}
+
+.fourth-section-divs {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fsd1 {
+    color: var(--hero-hover);
+}
+
+.family-container {
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 0 3rem;
+}
+
+.fsd1 h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.fsd1 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.family-container > .buttons {
+    padding: 1.5rem 3rem;
+}
+
+.fsd2 {
+    flex-direction: column-reverse;
+    background: var(--fourthSectionCard);
+    color: var(--white);
+    padding: 4rem;
+    margin: 0 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.fsd2 h2, .fsd3 h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.fsd2 p,
+.fsd3 p {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.fsd2 img, .fsd3 img {
+    align-self: flex-start;
+    width: 60%;
+    margin-bottom: 3rem;
+}
+
+.fsd2 .btn-style-3 {
+    padding: 1.5rem 6rem;
+    color: var(--hero-hover);
+    background: var(--btnYellow);
+}
+
+.fsd2 .btn-style-3:hover {
+    background: rgb(255, 123, 0);
+}
+
+.fsd3 {
+    background: var(--thirdSectionBlue);
+    padding: 4rem;
+    margin: 0 1.5rem;
+}
+
+.fsd3 .btn-style-1 {
+    padding: 1.5rem 6rem;
+}
+
+/*Last Section Mobile*/
+
+.last-section {
+    background: var(--thirdSectionBlue);
+}
+
+.all-links-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 5rem;
+    padding: 5rem;
+    color: #b8cbe6;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.all-links-container * {
+    margin-bottom: 1rem;
+}
+
+.all-links-container p {
+    font-size: 1.4rem;
+    color: #8299b8;
+}
+
+.all-links-container a {
+    color: whitesmoke;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+#support {
+    margin-bottom: 2rem;
+}
+
+.hiring a {
+    background: var(--btnOrange);
+    padding: 0.5rem;
+    color: var(--hero-hover);
+    font-size: 1.6rem;
+    font-weight: 800;
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.footer-links a:hover {
+    color: var(--btnOrange);
+}
+
+.hiring a:hover {
+    background: #efd9ad;
+    color: var(--hero-hover);
+}
+
+.language-container {
+    background: var(--footerBg);
+    border: 1px solid #b0c2dc;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fa-globe {
+    margin-right: 0.5rem;
+    color: lightblue;
+}
+
+.fa-sort-down {
+    /* border: 1px solid salmon; */
+    padding: 0 1rem;
+    font-size: 1.4rem;
+}
+
+/*Footer on mobile*/
+
+.footer-section {
+    background: var(--footerBg);
+    padding: 5rem ;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-container .first-footer-div div {
+    margin-bottom: 2rem;
+}
+
+.first-footer-div div #copyright {
+    color: #b0c2dc;
+    font-size: 1.2rem;
+}
+
+.terms-link1, .terms-link2 {
+    display: none;
+}
+
+address {
+    color: #b0c2dc;
+    font-size: 1.4rem;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.second-footer-div p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #b0c2dc;
+}
+
+.second-footer-div .social-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.second-footer-div i {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b0c2dc;
+}
+
+.second-footer-div i:hover {
+    color: var(--btnOrange);
+    cursor: pointer;
+}
+
+.second-footer-div .fa-book-atlas {
+    grid-column: span 4;
+}
+
+/*The Languuage Options Toggle*/
+
+.popup-container {
+    visibility: hidden;
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.popup-container * {
+    margin-bottom: unset;
+}
+
+.popup-props {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    list-style-type: none;
+}
+
+.items {
+    padding: 1rem;
+    padding-right: 6rem;
+}
+
+.items>a {
+    color: #8299b8;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.items:hover {
+    background: rgb(232, 232, 232);
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+/*TABLETS*/
+
+@media screen and (min-width: 700px) {
+
+    #logo2 {
+        display: block;
+        position: relative;
+        left: 70px;
+        width: 4rem;
+    }
+
+    .hero-container div p {
+        max-width: 50rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-container div .buttons {
+        max-width: 20rem;
+    }
+
+    #mobile-img {
+        width: 99%;
+        padding-left: 1rem ;
+    }
+
+    #second-section {
+        padding: 6rem 0.5rem;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 1.4rem;
+    }
+
+    .cards:first-of-type {
+        margin-right: 1rem;
+    }
+
+    .cards:last-of-type {
+        margin-left: 1rem;
+    }
+    
+    .cards {
+        padding: 2.5rem;
+    }
+
+    .card-txt p {
+        max-width: 30rem;
+    }
+
+    /*Third Section (logo section)*/
+
+    .third-section h2 {
+        font-size: 3rem;
+    }
+
+    .third-section p {
+        font-size: 1.7rem;
+    }
+
+    .third-section .container .buttons {
+        display: inline-block;
+        min-width: 20rem;
+        margin-right: 1rem;
+    }
+
+    /*Fourth Section on Tabs*/
+
+    .fourth-section-divs {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 3rem;
+    /* align-items: center; */
+    }
+
+    .family-container {
+        text-align: left;
+        padding: 0;
+    }
+
+    .fsd1 {
+        margin-bottom: 0.1rem;
+    }
+
+    .fsd1 h2 {
+        text-align: left;
+        font-size: 3rem;
+        max-width: 30rem;
+    }
+
+    .fsd1 p {
+        font-size: 1.7rem;
+    }
+
+    .fsd2 {
+        padding: 8rem;
+    }
+
+    .fsd2 p, .fsd3 p {
+        font-size: 1.7rem;
+        max-width: 50rem;
+    }
+
+    .fsd2 img {
+        align-self: center ;
+        justify-self: flex-end;
+    }
+
+    .fsd2 .btn-style-3, .fsd3 .btn-style-1 {
+        padding: 1.5rem 5rem;
+    }
+
+    .fsd3 {
+        padding: 5rem;
+    }
+
+    .fsd3 img {
+        padding-right: 5rem;
+    }
+
+/*Last section(multi links)*/
+    .all-links-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        padding: 5rem 10rem;
+        text-align: center;
+    }
+
+    /*Footer*/
+
+    .second-footer-div .social-icons {
+        display: block;
+    }
+
+    .second-footer-div p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        color: #b0c2dc;
+    }
+
+    .second-footer-div i {
+        font-size: 2rem;
+        color: #b0c2dc;
+        margin-right: 2rem;
+    }
+
+}
+
+/*LAPTOPS*/
+
+@media screen and (min-width: 980px) {
+
+    .intro-message {
+        display: block;
+        background: var(--intoYellow);
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 3.2rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    
+    .intro-message> p, .intro-message>p>a {
+        color: var(--thirdSectionBlue);
+    
+    }
+
+    .intro-message>p>a {
+        text-decoration: underline;
+    }
+    
+    
+    .intro-message>i {
+        font-size: 2.5rem;
+        color: var(--thirdSectionBlue);
+    }
+    
+    .fa-angle-right {
+        font-size: 1.8rem;
+    }
+    
+    .intro-message>p>a:hover, .intro-message>i:hover, .fa-angle-right:hover {
+        color: var(--fourthSectionCard);
+        cursor: pointer;
+    }
+
+    #mobile-menu{
+        display: none;
+    }
+
+    nav {
+        max-width: unset;
+    }
+
+    .links-container, .logo {
+        display: inline-block;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .links-container * {
+        margin-right: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .links-container a {
+        color: white;
+    }
+
+    #sign-in-link{
+        display: inline-block;
+        color: white;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #logo2 {
+        display: none;
+    }
+
+    .container, .all-links-container, .footer-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    #hero-section {
+        background: var(--secondSectionBlue);
+        padding-top: unset;
+    }
+
+    .hero-container {
+        /* padding-top: 30rem; */
+        flex-direction: row;
+        padding: unset;
+        background: var(--heroBlue);
+        border-radius: 0 0 50% 50%;
+        border-end-start-radius: 55% 85px;
+        border-end-end-radius: 55% 85px;
+        height: 580px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* .hero-container > * {
+            border: 1px solid red;
+        } */
+
+    .hero-container div {
+        /* padding-top: 40rem; */
+        position: relative;
+        left: 15%;
+        min-width:30rem;
+        /* position: absolute; */
+        /* min-width: 300px; */
+        /* width: 200%;
+        position: relative;
+        left: 12vw;
+        bottom: 2rem; */
+    }
+
+    .hero-container div h1, .hero-container div p {
+        text-align: left;
+    }
+
+    .hero-container div h1 {
+        font-size: 4rem;
+        font-weight: 900;
+    }
+
+    .hero-container div p {
+        max-width: 38rem;
+        font-size: 1.9rem;
+    }
+    
+
+/*For some reason, css is not picking up the desktop img id, instead it is picking the mobile one */
+    #mobile-img {
+        width: unset;
+        padding-left: unset;
+    }
+
+    .hero-container picture {
+        /* border: 1px solid orange; */
+        position: relative;
+        left: 35rem;
+    }
+
+    .hero-container div .buttons {
+        /* display: inline-block; */
+        min-width: 20rem;
+        margin-right: 2rem;
+        float: left;
+    }
+    /*Second Section on deskop*/
+
+    .cards {
+        flex-direction: row;
+        
+    }
+
+    .card-img {
+        margin-right: 2rem;
+    }
+
+    .card-img > * {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card-txt h3 {
+        font-size: 2rem;
+    }
+
+    .card-txt p {
+        font-size: 1.7rem;
+        margin-bottom: 5rem;
+        max-width: 35rem;
+    }
+
+    /*Third section on desktop*/
+
+    
+
+    .third-section h2 {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+    .third-section p {
+        max-width: 42rem;
+        margin: 0 auto;
+    }
+
+    /*Fourth Section on desktop*/
+
+    .fourth-section-divs {
+        max-width: 1100px;
+        margin: 0 auto;
+        margin-bottom: 8rem;
+        border-radius: 0.5rem;
+    }
+
+    .fsd1 p {
+        max-width: 33rem;
+    }
+
+    .fsd1 img {
+        width: 70%;
+        padding: 0 10rem;
+    }
+    
+    .fsd2 {
+        padding: 0 8rem;
+    }
+
+
+    .fsd2 img {
+        width: 40%;
+    }
+
+    .fsd3 {
+        padding: 0 8rem;
+        margin-bottom: 4rem;
+    }
+
+    .fsd3 img {
+        width: 40%;
+        padding-right: 6rem;
+        padding-top: 2rem;
+    }
+
+
+    /*Last section(multi-links) on desktop*/
+    .all-links-container {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+        padding: 5rem 0;
+        text-align: left;
+    }
+
+    .all-links-container p {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .fa-globe {
+        margin-right: 0.5rem;
+    }
+
+    .fa-sort-down {
+        padding: 0 1rem;
+        font-size: 1.4rem;
+    }
+
+    /*Footer*/
+
+    .footer-section {
+        background: var(--footerBg);
+        padding: 5rem 0;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 0;
+        text-align: left;
+    }
+
+    .footer-container .first-footer-div div {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .first-footer-div div #copyright {
+        margin-right: 1rem;
+        color: #b0c2dc;
+        font-size: 1.2rem;
+    }
+
+    .terms-link1, .terms-link2 {
+        margin-top: 0.3rem;
+    }
+
+
+    .terms-link1 a, .terms-link2 a {
+        text-decoration: underline;
+        color: #ebf0f8;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .dash {
+        display: inline-block;
+        font-size: 1rem;
+        color: #b0c2dc;
+    }
+
+    address {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    /*The Languuage Options Toggle*/
+    .popup-container {
+        bottom: -210px;
+    }
+
+    .popup-props {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
