@@ -15,6 +15,8 @@
 </head>
 <body>
     <header>
+
+        <!-- only visibile on desktops -->
         <div class="intro-message">
             <div id="empty"></div>
             <p id="into-text">Keep your family safe with the password manager they'll love to use. <a href="" target="_blank">Get 25% off your first year <i class="fa-solid fa-angle-right"></i></a></p>
@@ -23,6 +25,7 @@
         <nav class="nav-bar">
             <h3 id="mobile-menu">Menu</h3>
             <div class="links-container">
+                <!-- desktops only logo  -->
                 <div>
                     <img src="./One Password Images/logo-light-bg.svg" alt="logo" class="logo" id="logo1">
                 </div>
@@ -39,13 +42,16 @@
                 <a href="#" class="links mobile-only">sign in</a>
             </div>
 
+            <!-- tablets only logo -->
             <div>
                 <img src="./One Password Images/logo-light-bg.svg" alt="logo" class="logo" id="logo2">
             </div>
 
             
             <div class="buttons-container">
+                <!-- visibile only on desktop -->
                 <a href="" id="sign-in-link">Sign in</a>
+                <!-- visibile on all screens -->
                 <a href="#" id="nav-btn" class="buttons">Try 1Password FREE</a>
             </div>
         </nav>
@@ -64,6 +70,8 @@
                         <a href="#" class="buttons" id="hero-btn1">Get Started</a>
                         <a href="#" class="buttons" id="hero-btn2">Schedule a demo</a>
                     </div>
+
+                    <!-- different images based on screen sizes(Desktop, Tablets and Mobile) -->
                     <picture>
                         <source media="(min-width: 980px)" srcset="desktop.png" id="desktop-img">
                         <source media="(min-width: 700px)" srcset="tab.png" id="tab-img">
@@ -125,12 +133,13 @@
                 <h2 class="section-h2s">The secure enterprise password manager</h2>
                 <p class="third-section-p">More than 100,000 businesses trust 1Password to secure their business and protect their data.</p>
 
-                <!-- Again, different image dimentionfor different screen sizes(Although the images are the same) -->
+                <!-- Again, different image dimentionfor different screen sizes(Although the images are the same). Also, the logos arent individual pictures, they're all one image! -->
                 <picture>
                     <source media="(min-width: 980px)" srcset="logoDesktop.svg" id="logos-desk" class="logos-img">
                     <img src="./logoMobile.svg" alt="IfItDoesntMatchAnyMedia" id="logos-mobile" class="logos-img">
                 </picture>
                 
+                <!-- displayed as inline-block on bigger screens and as block on smaller ones -->
                 <div class="logo-btn-container">
                     <a href="#" class="buttons btn-style-1">Get Started</a>
                     <a href="#" class="buttons" id="logo-btn-2">Find out more</a>
@@ -139,8 +148,9 @@
             </div>
         </section>
 
-        <!-- Another(fourth) section -->
+        <!-- Another(fourth) section. this section has 3 sub sections inside of it given the class names fsd(n) -->
         <section class="fourth-section">
+            <!-- first of the sub-sections  -->
             <div class="fourth-section-divs fsd1">
                 <div class="family-container">
                     <h2>Keep your family safe online</h2>
@@ -150,6 +160,8 @@
                 </div>
                 <img src="./One Password Images/family-illustration.f70d5d9ecd3c8cc5371e5d8b841afa36.svg" alt="family">
             </div>
+
+            <!-- the second sub-section  -->
             <div class="fourth-section-divs fsd2">
                 <div class="password-university">
                     <h2>Introducing 1Password University</h2>
@@ -159,6 +171,8 @@
                 </div>
                 <img src="./One Password Images/panel-graphic.40498993bd90aada270ea47430e05c27.svg" alt="panel-graphic">
             </div>
+
+            <!-- last sub-section  -->
             <div class="fourth-section-divs fsd3">
                 <img src="./One Password Images/universal-panel-cube.4fcb82cd2ca32a2d485d135bcbdecfb6.svg" alt="panel-graphic">
                 <div class="dev-tools">
@@ -168,8 +182,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- the last section. It contains a bunch(6) of nav links in containers plus one button to chnage the language. -->
         <section class="last-section">
+
+            <!-- wrapper for all the differnet links  -->
             <div class="all-links-container">
+
+                <!-- links 1 -->
                 <div class="all-links-div" id="password-links">
                     <p>1Password</p>
                     <ul class="footer-links">
@@ -184,6 +204,8 @@
                         <li class="footer-link"><a href="">Developers</a></li>
                     </ul>
                 </div>
+
+                <!-- links 2 -->
                 <div class="all-links-div" id=""learn-links>
                     <p>Learn more</p>
                     <ul class="footer-links">
@@ -200,6 +222,8 @@
                         <li class="footer-link"><a href="">Secrets Automation</a></li>
                     </ul>
                 </div>
+
+                <!-- links 3 -->
                 <div class="all-links-div">
                     <div class="support-and-location" id="support">
                         <p>Support</p>
@@ -209,6 +233,7 @@
                             <li class="footer-link"><a href="">Contact Us</a></li>
                         </ul>
                     </div>
+                    <!-- links 4 -->
                     <div class="support-and-location">
                         <p>Locations</p>
                         <ul class="footer-links">
@@ -218,6 +243,8 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- links 5 -->
                 <div class="all-links-div">
                     <div class="all-links-div" id="company-links">
                         <p>Company</p>
@@ -234,6 +261,8 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- links 6 -->
                 <div class="all-links-div">
                     <div class="all-links-div" id="download">
                         <p>Downloads</p>
@@ -249,6 +278,8 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- language changer -->
                 <div class="all-links-div" id="language-links">
                     <div class="language-container">
                         <p class="english"><i class="fa-solid fa-globe"></i>English</p>
@@ -271,8 +302,12 @@
             </div>
         </section>
     </main>
+    
+    <!-- footer section  -->
     <section class="footer-section">
         <footer class="footer-container">
+
+            <!-- first block  -->
             <div class="first-footer-div">
                 <div>
                     <p id="copyright">&copy; 2022 1Password. All rights reserved</p>
@@ -289,6 +324,7 @@
                 </div>
                 <address>4711 Yonge St, 10th Floor, Toronto, Ontario, M2N 6K8, Canada.</address>
             </div>
+            <!-- second block -->
             <div class="second-footer-div">
                 <p>Find us on</p>
                 <div class="social-icons">
